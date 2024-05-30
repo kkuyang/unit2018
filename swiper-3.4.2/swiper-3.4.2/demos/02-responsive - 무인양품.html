@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/import.css">
+
+    <!-- Demo styles -->
+    <style>
+	h1,h2,h3,h4,h5,h6 { font-size:1em; color:#000; font-family:"맑은 고딕", 돋움, Dotum, sans-serif; font-weight:normal; }	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{ margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit;font-size:100%; font-family:inherit; vertical-align:baseline; box-sizing:border-box; }
+	:focus{ outline:0; }
+	a:active{ outline:none; }
+	body{ line-height:1; color:black; background:white; }
+	ol,ul{ list-style:none; }
+	table{ border-collapse:separate; border-spacing:0; }
+	caption,th,td{ text-align:left; font-weight:normal; }
+	blockquote:before, blockquote:after, q:before, q:after{ content:""; }
+	blockquote,q{ quotes:"" ""; } 
+	html,body,main{height:100%;}
+	a{text-decoration:none;}
+	
+	
+	
+	
+	.swiper-container {
+		border:0px solid blue;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+		border:0px solid cyan;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	.bg1{
+		background:url(../../../images/main/main_visual.png) no-repeat center 50px; 
+		background-size:cover;
+	}
+	.bg2{ 
+		background:url(../../../images/main/main_visual02.png) no-repeat center 50px;
+		background-size:cover;
+	}
+	.bg3{ 
+		background:url(../../../images/main/main_visual03.png) no-repeat center 50px;
+		background-size:cover;
+	}
+	
+	
+	<!--visual-->
+	#visual {
+		border:0px solid yellow;
+		width:100%;
+		height:100%;
+	}
+	
+	
+	<!--bg1-->
+	#visual .swiper-container .bg1 .inner{
+		border:0px solid red;
+		width:83%;
+		height:100%;
+		margin:0 auto;
+	}	
+	#visual .swiper-container .bg1 .inner p{
+		border:0px solid cyan;
+		font-size:28px;
+		font-family: "notokr-regular";
+		padding-top:47vh;
+		text-align:center;
+	}
+
+	
+	<!--bg2-->
+	#visual .swiper-container .bg2 .inner{
+		border:0px solid red;
+		width:83%;
+		height:100%;
+		margin:0 auto;
+	}
+	#visual .swiper-container .bg2 .inner dl{
+		border:0px solid blue;
+		text-align:left;
+		float:right;
+		padding-top:397px;
+		padding-right:200px;
+	}
+	#visual .swiper-container .bg2 .inner dd:nth-child(1){
+		border:0px solid red;
+		font-family: 'notokr-medium';
+		font-size:41px;
+		padding-bottom:15px;
+	}
+	#visual .swiper-container .bg2 .inner dt{
+		border:0px solid red;
+		font-family: 'notokr-bold';
+		font-size:55px;
+		color:#1a4241;
+	}
+    #visual .swiper-container .bg2 .inner dd:nth-child(3){
+		border:0px solid red;
+		font-family: 'notokr-demilight';
+		font-size:22px; 
+		padding-top:45px;
+		line-height:1.5;
+	}
+    
+	
+	<!--bg3-->
+	#visual .swiper-container .bg3 .inner{
+		border:0px solid red;
+		width:83%;
+		height:100%;
+		margin:0 auto;
+	}
+	#visual .swiper-container .bg3 .inner dl{
+		border:0px solid blue;
+		text-align:left;
+		float:right;	
+		padding-top:397px;
+		padding-right:300px;
+	}
+	#visual .swiper-container .bg3 .inner dd:nth-child(1){
+		border:0px solid red;
+		font-family: 'notokr-medium';
+		font-size:41px;
+		padding-bottom:15px;
+	}
+	#visual .swiper-container .bg3 .inner dt{
+		border:0px solid red;
+		font-family: 'notokr-bold';
+		font-size:55px;
+		color:#0a0058;
+	}
+    #visual .swiper-container .bg3 .inner dd:nth-child(3){
+		border:0px solid red;
+		font-family: 'notokr-demilight';
+		font-size:22px; 
+		padding-top:45px;
+		line-height:1.5;
+	}
+	
+	.swiper-pagination{
+		border:0px solid red;
+		margin-right:83px;
+	}
+	.swiper-pagination-bullet {
+		border:0px solid green;
+        width: 16px;
+        height: 16px;
+		opacity: 1;
+		background: #fff;
+    }
+    .swiper-pagination-bullet-active {
+        background: #7f0019;
+    }
+    </style>
+</head>
+<body>
+
+	<header><!--header-->
+					<h1 class="logo"><a href="#" title="logo"><img src="../../../images/common/logo01.png" /></a></h1>
+					<div class="search"><a href="#"><img src="../../../images/common/search.gif"></a></div>
+			<div class="inner"> <!-- inner -->
+					<nav>
+						<ul id="navi">
+							<li><a href="#" title="無印良品">無印良品</a></li>
+							<li><a href="#" title="SPECIAL">SPECIAL</a></li>
+							<li><a href="#" title="SHOPPING">SHOPPING</a></li>
+							<li><a href="#" title="CAMPAIGN">CAMPAIGN</a></li>
+							<li><a href="#" title="CS CENTER">CS CENTER</a></li>
+						</ul>
+					</nav>
+			</div> <!-- //inner -->	
+					<!--
+					<ul id="infoMenu">
+						<li><a href="#" title="로그인"><img src="./images/common/login.gif" /></a></li>
+						<li><a href="#" title="장바구니"><img src="./images/common/cart.gif" /></a></li>
+					</ul>		
+					-->
+					<ul id="infoMenu">
+						<li><a href="#" title="로그인">로그인</a></li>
+						<li><a href="#" title="장바구니">장바구니</a></li>
+					</ul>					
+		</header><!--//header-->
+	
+	<section id="visual"><!--visual-->
+
+		<!-- Swiper -->
+		<div class="swiper-container"><!--swiper-container-->
+			<div class="swiper-wrapper"><!--swiper-wrapper-->
+			
+				<!--bg1-->
+				<div class="swiper-slide bg1">
+					<div class="inner">
+						<p>벽걸이형 CD 플레이어</p>
+					</div>	
+					<p><a href="#"><img src="../../../images/main/buy.gif" /></a></p>
+				</div>
+				
+				<!--bg2-->
+				<div class="swiper-slide bg2">
+					<div class="inner">
+						<dl>
+							<dd>촉촉함을 더해주는</dd>
+							<dt>아로마 디퓨저</dt>
+							<dd>초음파로 발생시킨 미스트가 향기를 효과적으로<br>확산시켜 주어 넓은 방에서도 향기를 즐길 수 있습니다.</dd>
+						</dl>	
+					</div>	
+					<p><a href="#"><img src="../../../images/main/buy.gif" /></a></p>					
+				</div>
+				
+				<!--bg3-->
+				<div class="swiper-slide bg3">
+					<div class="inner">
+						<dl>
+							<dd>듀얼 카운터팬</dd>
+							<dt>공기청정기</dt>
+							<dd>「듀얼 카운터 팬」과 「360℃ 집진탈취 필터」로<br>방안의 공기를 움직여 부유물질을 확실히 제거시켜 줍니다.</dd>
+						</dl>	
+					</div>	
+					<p><a href="#"><img src="../../../images/main/buy.gif" /></a></p>
+				</div>
+				
+			</div><!--//swiper-wrapper-->
+
+		
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			
+			
+			
+			 <!-- Add Arrows 
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>-->
+
+		</div><!--//swiper-container-->
+
+	</section><!--//visual--> 
+	
+	
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+		direction: 'vertical',
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		effect: 'fade',
+		autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+</body>
+</html>

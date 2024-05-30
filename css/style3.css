@@ -1,0 +1,283 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+ .wrapper a,
+ .wrapper  a:hover,
+ .wrapper  a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 7px 10px;
+    background: #fff;
+    border: 0px solid red;
+    border-radius: 0;
+    margin-bottom: 40px;
+}
+
+.navbar-btn {
+	border: 0px solid red;
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {  /* 사이드바 전체 */
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+}
+#sidebar.active {
+    left: 0;
+}
+/* 닫기 버튼 */
+#dismiss {   
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ee1c25;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#dismiss p{
+	padding-top:1px;
+}	
+#dismiss:hover{
+    background: #fff;
+}
+#dismiss p:nth-child(2){
+    display:none;
+}
+#dismiss:hover p:nth-child(1){
+    display:none;
+}
+#dismiss:hover p:nth-child(2){
+    display:block;
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(240, 240, 240, 0.6);
+    z-index: 998;
+    display: none;
+}
+#sidebar .sidebar-header {  /* 상단 타이틀 */
+    padding:27px 20px;
+    background: #fff;
+}
+#sidebar ul.components {  /* 하단 라인 */
+    padding: 10px 0;
+    border-bottom: 0px solid #cdcdcd;
+	margin-bottom:28px;
+}
+#sidebar ul.components li a {
+    padding: 25px;
+	font-family: 'notokr-medium';
+    font-size: 15px;
+    display: block;
+	border-bottom:1px solid #cdcdcd;
+}
+#sidebar ul.components li.side_sub a {
+    padding: 25px 40px;
+}
+#sidebar ul.components li.side_sub a.sub2 {
+    padding: 25px 50px;
+	font-family: 'notokr-demilight';
+}
+#sidebar ul li a#bold {
+	font-family: 'NotoSansCJKkr-Medium';
+	font-size:15px;
+}
+#sidebar ul li:hover a.sub[aria-expanded="false"] {
+    color: #ee1c25;
+}
+#sidebar ul.components li a.sub[aria-expanded="false"] {
+	background:url(../images/common/side_arrow.png) no-repeat 210px center;
+}
+#sidebar ul li.submenu.active > a.sub, a.sub[aria-expanded="true"]{
+	color:#fff !important;
+	background:url(../images/common/side_arrow_white.png) no-repeat 210px center #ee1c25; 
+}
+ .wrapper #sidebar ul li.submenu a.sub[data-toggle="collapse"] {
+    position: relative;
+}
+ .wrapper #sidebar ul li.submenu a.sub[aria-expanded="false"]::before, #sidebar ul li.submenu a.sub[aria-expanded="true"]::before {    /*아이콘*/
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'notokr-medium';
+    font-size: 0.6em;
+}
+
+
+/* 서브메뉴 */
+.wrapper #sidebar ul ul li a {  
+    background: #f7f7f7;
+	border-bottom:1px solid #cdcdcd;
+}
+.wrapper #sidebar ul ul li:hover a.sub1 { 
+    background: #fff;
+	color:#ee1c25;
+}
+.wrapper #sidebar ul ul li:hover a.sub1[aria-expanded="false"] {
+    color: #ee1c25;
+}
+.wrapper #sidebar ul ul li a.sub1[aria-expanded="false"] {
+	background:url(../images/common/side_arrow.png) no-repeat 200px center #f7f7f7 ;
+}
+.wrapper #sidebar li.active > a.sub1, a.sub1[aria-expanded="true"]{
+	color:#000 !important;
+	background:url(../images/common/side_arrow_black.png) no-repeat 200px center #f5f1e9 !important; 
+}
+ .wrapper #sidebar ul ul li a.sub1[data-toggle="collapse"] {
+    position: relative;
+}
+ .wrapper #sidebar ul ul li a.sub1[aria-expanded="false"]::before,  .wrapper ul ul.collapse li a.sub1[aria-expanded="true"]::before {   
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'notokr-medium';
+    font-size: 0.6em;
+}
+.wrapper #sidebar ul li a.sub2{
+	background:#fff;
+	border-bottom:1px dotted #cdcdcd !important;
+}
+.wrapper #sidebar ul li.side_sub ul li:last-child a.sub2{
+	border-bottom:1px solid #cdcdcd !important;
+}
+.wrapper #sidebar ul li.side_sub ul li:hover a.sub2{
+	background:#f7f7f7;
+	color:#ee1c25;
+}
+
+
+/*----------sns---------*/
+.wrapper #sidebar ul.sns{
+	 border:0px solid red;
+	width:70%;
+	display:inline-block;
+	margin-left:35px;
+}
+.wrapper #sidebar ul.sns li{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.wrapper #sidebar ul.sns li:nth-child(1){
+	padding-top:2px;
+}
+.wrapper #sidebar ul.sns li:nth-child(2){
+	padding-top:4px;
+}
+.wrapper #sidebar ul.sns li:nth-child(3){
+	padding-top:2px;
+}
+.wrapper #sidebar ul.sns li:nth-child(4){
+	padding-top:5px;
+}
+/*------로그인/회원가입-------*/
+ .wrapper #sidebar ul.CTAs{
+	border:0px solid red;
+	width:100%;
+	display:inline-block;
+ }
+ .wrapper #sidebar ul.CTAs li{	
+	border:0px solid green;
+	width:50%;
+	height:auto;
+	overflow:hidden;
+	padding:17px;
+	float:left;
+}
+ .wrapper #sidebar ul.CTAs li:nth-child(1){
+	background:#ee1c25;
+	text-align:center;
+} 
+ .wrapper #sidebar ul.CTAs li:nth-child(2){
+	border-left:1px solid #fff;
+	background:#ee1c25;
+	text-align:center;
+} 
+ .wrapper #sidebar ul.CTAs li a {
+	border:0px solid blue;
+    font-size: 14px;
+	font-family: 'notokr-demilight';
+}
+ .wrapper #sidebar a.login {
+    color: #fff;
+}
+ .wrapper #sidebar a.join{
+    color: #fff;
+}
+ .wrapper #sidebar ul.CTAs li:hover {
+	background:#fff;
+}
+ .wrapper #sidebar ul.CTAs li:hover a{
+	 font-family: 'notokr-medium';
+	color:#ee1c25;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+ .wrapper #content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ .wrapper #content .m_qnb{
+	 display:none;
+ }
+
+/*------모바일(contents01)--------*/
+@media all and (max-width:599px){
+	 .wrapper #content {
+		min-height: 100vh;
+		transition: all 0.3s;
+		position: absolute;
+		top: -4px;
+		left: 0px;
+	}
+	 .wrapper #content .m_qnb{
+		 display:block;
+	 }
+	 .wrapper #content .t_qnb{
+		 display:none;
+	 }
+}
+
+
+
+

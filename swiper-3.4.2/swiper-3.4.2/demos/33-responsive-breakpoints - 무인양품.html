@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/import.css">
+
+    <!-- Demo styles -->
+    <style>
+	*{margin:0; padding:0; box-sizing:border-box;}
+	
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container2 {
+        width: 100%;
+		height:auto;
+		overflow:hidden;
+		border:1px solid cyan;
+    }
+	 
+    .swiper-container2 .swiper-slide {
+		border:1px solid blue;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	
+	
+	.swiper-container2 .swiper-slide dl{
+		border:0px solid cyan;
+		width:100%;
+		height:100%;
+		text-align:center;
+	}
+	 .swiper-slide dl dt{
+		background:#fff;
+		height:186px;
+	}
+	
+	 .swiper-container2 .swiper-slide dl dd:nth-child(2){
+		font-family: 'notokr-regular';
+		font-size:19px;
+		padding-top:50px;
+	}
+	 .swiper-container2 .swiper-slide dl dd:nth-child(2) a{
+		text-decoration:none;
+		color:#000;
+	}
+	 .swiper-container2 .swiper-slide dl dd:nth-child(3){
+		font-family: 'notokr-medium';
+		font-size:19px;
+		padding-top:21px;
+	}
+	 .swiper-container2 .swiper-slide dl dd:nth-child(3) span{
+		font-family:"맑은 고딕";
+		font-weight:600;
+	}
+	
+	
+    </style>
+</head>
+<body>
+    <section id="contents01"><!--contents01-->
+		<div class="outer"><!-- outer -->
+			<div class="inner"><!-- inner -->
+					
+				<!-- Swiper -->
+				<div class="swiper-container2">
+
+						<div class="swiper-wrapper">
+						
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_01.png"  /></a></dt>
+									<dd><a href="#">베개 커버 · 베이지체크</a></dd>
+									<dd><span>\&nbsp;</span>9,900</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_02.png" /></a></dt>
+									<dd><a href="#">노트</a></dd>
+									<dd><span>\&nbsp;</span>900</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_03.png" /></a></dt>
+									<dd><a href="#">소프트 슬리퍼 · L · 베이지</a></dd>
+									<dd><span>\&nbsp;</span>4,000</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_04.png" /></a></dt>
+									<dd><a href="#">베개 커버 · 라이트 그레이</a></dd>
+									<dd><span>\&nbsp;</span>13,000</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_05.png"  /></a></dt>
+									<dd><a href="#">룸 샌들 · 에크루</a></dd>
+									<dd><span>\&nbsp;</span>6,900</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_06.png" /></a></dt>
+									<dd><a href="#">룸 샌들 · 에크루×옐로우</a></dd>
+									<dd><span>\&nbsp;</span>6,900</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_07.png" /></a></dt>
+									<dd><a href="#">하프 팬츠</a></dd>
+									<dd><span>\&nbsp;</span>24,900</dd>
+								</dl>
+							</div>
+							<div class="swiper-slide">
+								<dl>
+									<dt><a href="#"><img src="../../../images/main/product01_08.png" /></a></dt>
+									<dd><a href="#">하프 팬츠</a></dd>
+									<dd><span>\&nbsp;</span>19,900</dd>
+								</dl>
+							</div>
+
+						
+					</div>
+					</div>
+					
+					
+					
+			</div><!-- //inner -->
+			
+			<!--button-->
+			<div class="swiper-button-prev swiper-button-black"></div>
+			<div class="swiper-button-next swiper-button-black"></div>
+			
+		</div><!-- //outer -->
+		</section><!--//contents01-->
+
+		 
+
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 4,
+        spaceBetween: 83,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+			480: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+    </script>
+</body>
+</html>

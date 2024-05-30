@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+	
+	
+	
+	#contents04{
+		border:1px solid red;
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		margin-bottom:192px;
+	}
+	#contents04 .inner{
+		border:3px solid green;
+		width:83%;
+		margin:0 auto;
+	}
+	#contents04 h3{
+		border:0px solid red;
+		font-family: 'notokr-medium';
+		font-size:45px;
+		text-align:center;
+		margin-bottom:52px;
+	}
+	#contents04 h3 span{
+		color:#7f0019;
+	}
+	#contents04 .inner p.view{
+		border:0px solid red;
+		text-align:right;
+		width:100%;
+		margin-bottom:15px;
+		padding-right:5px;
+	}
+	#contents04 .inner p.view a{
+		font-family: 'notokr-regular';
+		font-size:18px;
+		color:#000;
+	}
+	
+	
+	
+    .swiper-container3 {
+		border:1px solid blue;
+        width: 100%;
+        height: 100%;
+    }
+	 .swiper-container3 .swiper-wrapper img{
+		border:3px solid cyan;
+		width:100%;
+		height:100%;
+	}
+    .swiper-slide {
+		border:3px solid red;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .append-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .append-buttons a {
+        display: inline-block;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+    }
+    </style>
+</head>
+<body>
+    <section id="contents04"><!--contents04-->
+			<div class="inner">	
+				<h3><span>MUJI&nbsp;</span>CAMPAIGN</h3>
+				<p class="view"><a href="#">전체 보기</a></p>
+				
+				<!-- Swiper -->
+				<div class="swiper-container3">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="#"><img src="../../../images/main/campaign01.png" /></a></div>
+						<div class="swiper-slide"><a href="#"><img src="../../../images/main/campaign02.png" /></a></div>
+						<div class="swiper-slide"><a href="#"><img src="../../../images/main/campaign03.png" /></a></div>
+						<div class="swiper-slide"><a href="#"><img src="../../../images/main/campaign04.png" /></a></div>
+						<div class="swiper-slide"><a href="#"><img src="../../../images/main/campaign05.png" /></a></div>
+						<div class="swiper-slide"><a href="#"><img src="../../../images/main/campaign06.png" /></a></div>
+					</div>
+
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				
+			</div>	
+		</section><!--//contents04-->
+   
+   
+   
+    <!-- Swiper JS -->
+	  <script src="../dist/js/swiper.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		var swiper = new Swiper('.swiper-container3', {
+		  slidesPerView: 2.5,
+		  spaceBetween: 0,
+		  // init: false,
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  },
+		  breakpoints: {
+			1024: {
+			  slidesPerView: 4,
+			  spaceBetween: 40,
+			},
+			768: {
+			  slidesPerView: 3,
+			  spaceBetween: 30,
+			},
+			640: {
+			  slidesPerView: 2,
+			  spaceBetween: 20,
+			},
+			320: {
+			  slidesPerView: 1,
+			  spaceBetween: 10,
+			}
+		  }
+		});
+	  </script>
+</body>
+</html>

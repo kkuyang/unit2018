@@ -1,0 +1,6 @@
+/* import.css(외부 css파일을 한개의 파일로 불러들이기) */
+
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./style.css);
+@import url(./font.css);

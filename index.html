@@ -1,0 +1,801 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> UNIQLO </title>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta name="description" content="페이지 설명">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="./images/common/unifavi.ico" >
+<!--<link rel="shortcut icon" href="*.ico">-->
+<link rel="stylesheet" type="text/css" href="./css/import.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./swiper-3.4.2/swiper-3.4.2/dist/css/swiper.css">
+<!-- sidevar CSS -->
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+<!--navigation-->
+<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/guide.js"></script>
+<!-- sidevar JS -->
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+<script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+</head>
+
+<body>
+	<main>
+		<header><!--header-->
+				<div class="headerD"><!-- headerD-->	
+				
+				<!-- 로고, 검색 -->
+					<h1 class="logo"><a href="index.html" title="logo"><img src="./images/common/logo01.png" /></a></h1>
+					<div class="search-icon"><img src="./images/common/search.gif"></div>
+				<!--태블릿 로고-->
+					<h1 class="t-logo"><a href="index.html" title="logo"><img src="./images/common/t_logo.png" /></a></h1>	
+				<!--모바일 로고-->
+					<h1 class="m-logo"><a href="index.html" title="logo"><img src="./images/common/m_logo.png" /></a></h1>
+							
+				<!-- 메뉴 -->
+					<div class="gnbD"><!-- gnbD -->
+						<div class="inner">
+							<ul class="gnb"><!-- gnb -->
+								<li class="gL1">
+									<a href="javascript:" class="oneD">UNIQLO</a>
+									<div class="twoD1">
+										<a href="uniqlo.html"><span>What is UNI?</span></a>
+										<a href="#"><span>회사연혁</span></a>
+										<a href="#"><span>채용공고</span></a>
+										<a href="#"><span>매장정보</span></a>														
+									</div>
+								</li> 
+								<li class="gL2">
+									<a href="javascript:" class="oneD">SPECIAL</a>
+									<div class="twoD2">
+										<a href="shopping.html"><span>인기상품</span></a>
+										<a href="#"><span>신상품</span></a>
+										<a href="#"><span></span></a>
+										<!--<li><a href="#" class="sub1">아울렛</a></li>-->
+									</div>
+								</li>  
+								<li class="gL3">
+									<a href="javascript:" class="oneD">SHOPPING</a>
+									<div class="twoD3">
+										<a href="shopping.html"><span>MAN</span></a>
+										<a href="#"><span>WOMAN</span></a>
+										<a href="#"><span>KIDS</span></a>
+										<a href="#"><span></span></a>						
+									</div>
+								</li>  
+								<li class="gL4">
+									<a href="javascript:" class="oneD">CAMPAIGN</a>
+									<div class="twoD4">
+										<a href="campaign.html"><span>캠페인 · 특집</span></a>
+										<a href="#"><span>기획전</span></a>
+										<a href="#"><span>칼럼</span></a>
+									</div>		
+								</li>  
+								<li class="gL5">
+									<a href="javascript:" class="oneD">CS CENTER</a>
+									<div class="twoD5">
+										<a href="cscenter.html"><span>자주하는 질문</span></a>
+										<a href="#"><span>문의하기</span></a>
+										<a href="#"><span>공지사항</span></a>											
+									</div>
+								</li> 
+							</ul><!--// gnb -->
+							
+						</div> <!--inner-->
+					</div><!--// gnbD -->
+
+						<ul id="infoMenu">
+							<li><a href="login.html" title="로그인">로그인</a></li>
+							<li><a href="shoppingbag.html" title="장바구니">장바구니</a></li>
+						</ul>
+						
+					<!--태블릿 메뉴/장바구니 -->
+					<div id="cart"><a href="shoppingbag.html"><img src="./images/common/t_cart.png"></a></div>
+					<!--모바일 메뉴/장바구니 -->
+					<div id="m-cart"><a href="shoppingbag.html"><img src="./images/common/m_cart.png"></a></div>
+				</div><!--// headerD -->	
+				
+				<!----------------------------search-box------------------------------>
+				<div class="search-box">
+					<div class="search">
+						<input type="text" placeholder="검색어를 입력해주세요"/>
+						<input type="button"/>
+					</div>
+					<div class="search-word">
+						<dl>
+							<dt>인기검색어</dt>
+							<dd><a href="#">CDP</a></dd>			
+							<dd><a href="#">스니커즈</a></dd>			
+							<dd><a href="#">초콜릿</a></dd>			
+							<dd><a href="#">파자마</a></dd>			
+						</dl>
+						
+						<dl>
+							<dt>최근검색어</dt>
+							<dd>검색 내역이 없습니다.</dd>
+						</dl>
+					</div>
+					<p id="close"><img src="./images/common/search_close.png"></p>
+				</div>
+				
+				<script>
+					$(document).ready(function() {
+					 
+							$(".search-icon").click(function() {
+							   $(".search-box").toggle();
+							   $("input[type='text']").focus();
+							 });
+							 
+							 $("#close").click(function() {
+							   $(".search-box").toggle();
+							 });
+				 
+						});
+				</script>
+				
+				
+				<!---------------------------------bootstrap sidevar-------------------------------->
+						<div class="wrapper"><!--wrapper-->
+							<!-- Sidebar Holder -->
+							<nav id="sidebar">
+								<div id="dismiss">
+									<p><img src="./images/common/h_close.png"></p>
+									<p><img src="./images/common/close.png"></p>
+								</div>
+
+								<div class="sidebar-header">
+									<p><img src="./images/common/side_logo.png"></p>
+								</div>
+
+								<ul class="list-unstyled CTAs">
+									<li><a href="login.html" class="login">로그인</a></li>
+									<li><a href="register.html" class="join">회원가입</a></li>
+								</ul>
+								
+								<ul class="list-unstyled components">
+									<li class="submenu"><a href="#mujiSubmenu" data-toggle="collapse" aria-expanded="false" class="sub" id="bold">UNIQLO</a>
+										<ul class="collapse list-unstyled" id="mujiSubmenu">
+											<li><a href="uniqlo.html" class="sub1">What is UNI?</a></li>
+											<li><a href="#" class="sub1">회사연혁</a></li>
+											<li><a href="#" class="sub1">채용공고</a></li>
+											<li><a href="#" class="sub1">매장정보</a></li>
+										</ul>
+									</li>
+									
+									<li class="submenu"><a href="#specialSubmenu" data-toggle="collapse" aria-expanded="false" class="sub">SPECIAL</a>
+										<ul class="collapse list-unstyled" id="specialSubmenu">
+											<li><a href="shopping.html" class="sub1">인기상품</a></li>
+											<li><a href="#" class="sub1">신상품</a></li>
+											<li><a href="#" class="sub1">from Japan</a></li>
+											<!--<li><a href="#" class="sub1">아울렛</a></li>-->
+										</ul>
+									</li>
+									
+									<li class="submenu"><a href="#shoppingSubmenu" data-toggle="collapse" aria-expanded="false" class="sub">SHOPPING</a>
+										<ul class="collapse list-unstyled" id="shoppingSubmenu">
+											<li class="side_sub"><a href="#clothSubmenu" data-toggle="collapse" aria-expanded="false" class="sub1">남성의류</a>
+												<ul class="collapse list-unstyled" id="clothSubmenu">
+													<li><a href="shopping.html" class="sub2">상의</a></li>
+													<li><a href="#" class="sub2">하의</a></li>
+													<li><a href="#" class="sub2">니트</a></li>
+													<li><a href="#" class="sub2">셔츠</a></li>
+												</ul>
+											</li>
+											<li class="side_sub"><a href="#foodSubmenu" data-toggle="collapse" aria-expanded="false" class="sub1">여성의류</a>
+												<ul class="collapse list-unstyled" id="foodSubmenu">
+													<li><a href="#" class="sub2">상의</a></li>
+													<li><a href="#" class="sub2">하의</a></li>
+													<li><a href="#" class="sub2">니트</a></li>
+													<li><a href="#" class="sub2">셔츠</a></li>
+												</ul>
+											</li>
+											<li class="side_sub"><a href="#lifeSubmenu" data-toggle="collapse" aria-expanded="false" class="sub1">KIDS</a>
+												<ul class="collapse list-unstyled" id="lifeSubmenu">
+													<li><a href="#" class="sub2">상의</a></li>
+													<li><a href="#" class="sub2">하의</a></li>
+													<li><a href="#" class="sub2">니트</a></li>
+													<li><a href="#" class="sub2">셔츠</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									
+									<li class="submenu"><a href="#campaignSubmenu" data-toggle="collapse" aria-expanded="false" class="sub">CAMPAIGN</a>
+										<ul class="collapse list-unstyled" id="campaignSubmenu">
+											<li><a href="campaign.html" class="sub1">캠페인 · 특집</a></li>
+											<li><a href="#" class="sub1">무지칼럼</a></li>
+											<li><a href="#" class="sub1">기획전</a></li>
+										</ul>
+									</li>
+									
+									<li class="submenu"><a href="#cscenterSubmenu" data-toggle="collapse" aria-expanded="false" class="sub">CS CENTER</a>
+										<ul class="collapse list-unstyled" id="cscenterSubmenu">
+											<li><a href="cscenter.html" class="sub1">자주하는 질문</a></li>
+											<li><a href="#" class="sub1">문의하기</a></li>
+											<li><a href="#" class="sub1">공지사항</a></li>
+										</ul>
+									</li>
+								</ul>
+	
+								<ul class="list-unstyled sns">
+									<li><a href="#"><img src="./images/common/sns01.png"></a></li>
+									<li><a href="#"><img src="./images/common/sns03.png"></a></li>
+									<li><a href="#"><img src="./images/common/sns02.png"></a></li>
+									<li><a href="#"><img src="./images/common/sns04.png"></a></li>
+								</ul>
+							</nav>
+
+							<!-- Page Content Holder -->
+							<div id="content"><!--content-->
+								<nav class="navbar navbar-default">
+									<div class="container-fluid">
+										<div class="navbar-header">
+											<div id="sidebarCollapse" class="btn btn-info navbar-btn">
+												<img src="./images/common/t_qnb.png" class="t_qnb">
+												<img src="./images/common/m_qnb.png" class="m_qnb">
+											</div>
+										</div>	
+									</div>
+								</nav>
+							</div><!--//content-->
+							<div class="overlay"></div>		
+						</div><!--//wrapper-->	
+		</header><!--//header-->
+		
+		<script type="text/javascript">
+			$(function(){
+			  var menu=".gnbD .gnb li";
+					 
+				$(menu).mouseover(function(){
+						$(this).css("background","#none");
+				});
+				$(menu).mouseout(function(){
+						$(this).css("background","none");
+				});
+			});
+		</script>
+		
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#sidebar").mCustomScrollbar({
+					theme: "minimal"
+				});
+
+				$('#dismiss, .overlay').on('click', function () {
+					$('#sidebar').removeClass('active');
+					$('.overlay').fadeOut();
+				});
+
+				$('#sidebarCollapse').on('click', function () {
+					$('#sidebar').addClass('active');
+					$('.overlay').fadeIn();
+					$('.collapse.in').toggleClass('in');
+					$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+				});
+			});
+		</script>
+		
+		<section id="visual"><!--visual-->
+			<!-- Swiper -->
+			<div class="swiper-container"><!--swiper-container-->
+				<div class="swiper-wrapper"><!--swiper-wrapper-->
+				
+					<!--bg1-->
+					<div class="swiper-slide bg1">
+						<div class="inner">
+							<p></p>
+						</div>	
+						<p class="buy"><a href="#"><img src="./images/main/buy.gif" /></a></p>
+						<p class="m-buy"><a href="#"><img src="./images/main/m_buy.png" /></a></p>
+					</div>
+					
+					<!--bg2-->
+					<div class="swiper-slide bg2">
+						<div class="inner">
+							<dl>
+								<dd></dd>
+								<dt></dt>
+							</dl>
+						</div>	
+						<p class="buy"><a href="#"><img src="./images/main/buy.gif" /></a></p>					
+						<p class="m-buy"><a href="#"><img src="./images/main/m_buy.png" /></a></p>					
+					</div>
+					
+					<!--bg3-->
+					<div class="swiper-slide bg3">
+						<div class="inner">
+							<dl>
+								<dd></dd>
+								<dt></dt>
+							</dl>
+						</div>	
+						<p class="buy"><a href="#"><img src="./images/main/buy.gif" /></a></p>					
+						<p class="m-buy"><a href="#"><img src="./images/main/m_buy.png" /></a></p>					
+					</div>
+					
+				</div><!--//swiper-wrapper-->
+
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+
+			</div><!--//swiper-container-->
+		</section><!--//visual--> 
+		
+		<!-- Swiper JS -->
+		<script src="./swiper-3.4.2/swiper-3.4.2/dist/js/swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			effect: 'fade',
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false
+		});
+		</script>
+		
+		<div class="top-btn">
+		<section id="contents01"><!--contents01-->
+			<div class="outer"><!-- outer -->
+				<div class="inner"><!-- inner -->	
+					<h3><span>NEW&nbsp;</span>ARRIVAL</h3>		
+					<!-- Swiper -->
+					<div class="swiper-container2"><!--swiper-container2-->
+						<div class="swiper-wrapper"><!--swiper-wrapper-->			
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_01.png"  /></a></dt>
+										<dd><a href="#">히트텍블랭킷</a></dd>
+										<dd><span>\&nbsp;</span>49,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_02.png" /></a></dt>
+										<dd><a href="#">울트라라이트컴팩트재킷</a></dd>
+										<dd><span>\&nbsp;</span>69,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_03.png" /></a></dt>
+										<dd><a href="#">BT크루넥T</a></dd>
+										<dd><span>\&nbsp;</span>9,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_04.png" /></a></dt>
+										<dd><a href="#">BN코디네이트쇼트올</a></dd>
+										<dd><span>\&nbsp;</span>19,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_05.png"  /></a></dt>
+										<dd><a href="#">소프트스트레치파자마</a></dd>
+										<dd><span>\&nbsp;</span>39,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_06.png" /></a></dt>
+										<dd><a href="#">소프트스트레치파자마</a></dd>
+										<dd><span>\&nbsp;</span>39,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_07.png" /></a></dt>
+										<dd><a href="#">하프 팬츠</a></dd>
+										<dd><span>\&nbsp;</span>24,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_08.png" /></a></dt>
+										<dd><a href="#">점퍼스커트</a></dd>
+										<dd><span>\&nbsp;</span>39,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_09.png"  /></a></dt>
+										<dd><a href="#">슬러브 폴로 셔츠</a></dd>
+										<dd><span>\&nbsp;</span>24,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_10.png" /></a></dt>
+										<dd><a href="#">피케 폴로 셔츠</a></dd>
+										<dd><span>\&nbsp;</span>24,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_11.png" /></a></dt>
+										<dd><a href="#">소프트스트레치파자마</a></dd>
+										<dd><span>\&nbsp;</span>39,900</dd>
+									</dl>
+								</div>
+								<div class="swiper-slide">
+									<dl>
+										<dt><a href="#"><img src="./images/main/product01_12.png" /></a></dt>
+										<dd><a href="#">소프트스트레치파자마</a></dd>
+										<dd><span>\&nbsp;</span>39,900</dd>
+									</dl>
+								</div>
+						</div><!--//swiper-wrapper-->
+						
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					
+					</div><!--//swiper-container2-->
+				</div><!-- //inner -->
+
+				<!--button-->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div><!-- //outer -->
+		</section><!--//contents01-->
+		
+		<!-- Initialize Swiper -->
+		<script>
+		var swiper = new Swiper('.swiper-container2', {
+			slidesPerView: 4,
+			spaceBetween: 83,
+			slidesPerGroup: 4,
+			loop: false,
+			loopFillGroupWithBlank: false,
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			breakpoints: {
+				1279: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+					slidesPerGroup: 4
+				},
+				900: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+					slidesPerGroup: 3
+				},
+				700: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					slidesPerGroup: 2
+				},
+				319: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					slidesPerGroup: 2
+				}
+			}
+		});
+		</script>
+		
+		
+		<section id="contents02"><!--contents02-->
+			<div class="inner"><!--inner-->
+				<h3><span>BEST&nbsp;</span>PRODUCT</h3>
+				<dl>
+					<dt>파자마</dt>
+					<dd>부드러우면서도 편한 착용감을 느낄 수 있는 파자마.<br>면 소재 100% 사용.</dd>
+					<dd><span>\&nbsp;</span>39,900</dd>
+					<dd>
+						<button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="DETAIL VIEWS">
+							<span>D</span><span>E</span><span>T</span><span>A</span><span>I</span><span>L</span>
+							<span>V</span><span>I</span><span>E</span><span>W</span><span>S</span>
+						</button>
+					</dd>
+				</dl>	
+			</div><!--//inner-->
+		</section><!--//contents02-->
+
+		
+		<section id="contents03"><!--contents03-->
+			<div class="inner">
+				<p class="view"><a href="shopping.html">전체 보기</a></p>
+				<div class="best">
+					<div class="best01">
+						<p class="img"><img src="./images/main/best02.png" /></p>
+						<dl><a href="#">
+							<dt>GIRLS레이온블라우스(긴팔)</dt>
+							<dd><img src="./images/main/line01.gif" /></dd>
+							<dd><img src="./images/main/line02.gif" /></dd>
+							<dd>부드러운 감촉을 느낄 수 있는 <br>레이온 블라우스.</dd>
+							<dd><span>\&nbsp;</span>19,900</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="best02">
+						<dl><a href="#">
+							<dt>울트라라이트다운컴팩트V넥베스트</dt>
+							<dd><img src="./images/main/line01.gif" /></dd>
+							<dd><img src="./images/main/line02.gif" /></dd>
+							<dd>이너 다운으로도 착용하기 좋은 <br>울트라 라이트 다운 베스트.</dd>
+							<dd><span>\&nbsp;</span>49,900</dd>
+							</a>
+						</dl>
+						<p class="img"><img src="./images/main/best04.png" /></p>
+					</div>
+					<div class="best03">
+						<p class="img"><img src="./images/main/best03.png" /></p>
+						<dl><a href="#">
+							<dt>BN코디네이트쇼트올</dt>
+							<dd><img src="./images/main/line01.gif" /></dd>
+							<dd><img src="./images/main/line02.gif" /></dd>
+							<dd>부드러우면서도 상쾌한 착용감을<br>느낄 수 있는 코디네이트 쇼트올.</dd>
+							<dd><span>\&nbsp;</span>19,900</dd>
+							</a>
+						</dl>
+					</div>	
+				</div>
+			</div>
+		</section><!--//contents03-->
+		
+		
+		 <section id="contents04"><!--contents04-->
+			<div class="inner">	<!--inner-->
+				<h3><span>UNICQLO&nbsp;</span>CAMPAIGN</h3>
+				<p class="view"><a href="campaign.html">전체 보기</a></p>
+				
+				<!-- Swiper -->
+				<div class="swiper-container3"><!--swiper-container3-->
+					<div class="swiper-wrapper"><!--swiper-wrapper-->
+						<div class="swiper-slide">
+							<div class="grid">
+									<figure class="effect-ruby">
+										<img src="./images/main/campaign01.png" id="main"/>
+										<figcaption>
+											<dl>
+												<dd><img src="./images/main/campaign_line.gif"></dd>
+												<dd>UNIQLO를 입다</dd>
+												<dd><a href="#"><img src="./images/main/campaign_view.png"></a></dd>
+										</figcaption>			
+									</figure>	
+								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="grid">
+									<figure class="effect-ruby">
+										<img src="./images/main/campaign02.png" id="main"/>
+										<figcaption>
+											<dl>
+												<dd><img src="./images/main/campaign_line.gif"></dd>
+												<dd>속옷이 되었습니다</dd>
+												<dd><a href="#"><img src="./images/main/campaign_view.png"></a></dd>
+										</figcaption>			
+									</figure>	
+								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="grid">
+									<figure class="effect-ruby">
+										<img src="./images/main/campaign03.png" id="main"/>
+										<figcaption>
+											<dl>
+												<dd><img src="./images/main/campaign_line.gif"></dd>
+												<dd>I am UNICQLO</dd>
+												<dd><a href="#"><img src="./images/main/campaign_view.png"></a></dd>
+										</figcaption>			
+									</figure>	
+								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="grid">
+									<figure class="effect-ruby">
+										<img src="./images/main/campaign04.png" class="main"/>
+										<figcaption>
+											<dl>
+												<dd><img src="./images/main/campaign_line.gif"></dd>
+												<dd>UNICQLO to Relax</dd>
+												<dd><a href="#"><img src="./images/main/campaign_view.png"></a></dd>
+										</figcaption>			
+									</figure>	
+								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="grid">
+									<figure class="effect-ruby">
+										<img src="./images/main/campaign05.png" class="main"/>
+										<figcaption>
+											<dl>
+												<dd><img src="./images/main/campaign_line.gif"></dd>
+												<dd>NEW STYLE</dd>
+												<dd><a href="#"><img src="./images/main/campaign_view.png"></a></dd>
+										</figcaption>			
+									</figure>	
+								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="grid">
+									<figure class="effect-ruby">
+										<img src="./images/main/campaign06.png" class="main"/>
+										<figcaption>
+											<dl>
+												<dd><img src="./images/main/campaign_line.gif"></dd>
+												<dd>Compact Life</dd>
+												<dd><a href="#"><img src="./images/main/campaign_view.png"></a></dd>
+										</figcaption>			
+									</figure>	
+								</div>
+						</div>
+					</div><!--//swiper-wrapper-->
+					
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						
+				</div><!--//swiper-container3-->
+			</div><!--//inner-->	
+			
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</section><!--//contents04-->
+
+		<!-- Initialize Swiper -->
+		<script>
+		var swiper = new Swiper('.swiper-container3', {
+			slidesPerView: 2.5,
+			spaceBetween: 0,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			// init: false,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			breakpoints: {
+				1279: {
+				  slidesPerView: 2,
+				  spaceBetween: 0,
+				},
+				768: {
+				  slidesPerView: 2,
+				  spaceBetween: 0,
+				},
+				450: {
+				  slidesPerView: 1,
+				  spaceBetween: 0,
+				},
+				320: {
+				  slidesPerView: 1,
+				  spaceBetween: 0,
+				}
+			  }
+			});
+		  </script>
+		
+		
+		<section id="contents05"><!--contents05-->
+			<div class="inner"><!--inner-->
+				<h3><span>UNICQLO&nbsp;</span>STORE</h3>
+				<p class="view"><a href="#">전체 보기</a></p>
+				
+				<!-- Swiper -->
+				<div class="swiper-container4"><!--swiper-container4-->
+					<div class="swiper-wrapper"><!--swiper-wrapper-->
+
+						<div class="swiper-slide">
+							<div class="store_img"><img src="./images/main/store01.png" /></div>
+							<div class="m_store_img"><img src="./images/main/m_store01.png" /></div>
+							<dl data-swiper-parallax="-40">
+								<dt>서초점</dt>
+								<dd><img src="./images/main/line02.gif" /></dd>
+								<dd>Tel. 02-2161-5430<br>서울특별시 서초구 서초동 1498-5 마제스타시티 타워1, 1F</dd>
+								<dd>
+									<button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="DETAIL VIEWS">
+										<span>D</span><span>E</span><span>T</span><span>A</span><span>I</span><span>L</span>
+										<span>V</span><span>I</span><span>E</span><span>W</span><span>S</span>
+									</button>
+								</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<div class="store_img"><img src="./images/main/store02.png" /></div>
+							<div class="m_store_img"><img src="./images/main/m_store02.png" /></div>
+							<dl data-swiper-parallax="-40">
+								<dt>코엑스점</dt>
+								<dd><img src="./images/main/line02.gif" /></dd>
+								<dd>Tel. 02-3453-5448<br>	서울특별시 강남구 삼성동 159 코엑스점 지하 1층</dd>
+								<dd>
+									<button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="DETAIL VIEWS">
+										<span>D</span><span>E</span><span>T</span><span>A</span><span>I</span><span>L</span>
+										<span>V</span><span>I</span><span>E</span><span>W</span><span>S</span>
+									</button>
+								</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<div class="store_img"><img src="./images/main/store03.png" /></div>
+							<div class="m_store_img"><img src="./images/main/m_store03.png" /></div>
+							<dl data-swiper-parallax="-40">
+								<dt>롯데백화점 중동점</dt>
+								<dd><img src="./images/main/line02.gif" /></dd>
+								<dd>Tel. 032-320-7663<br>경기도 부천시 원미구 중동 1140 롯데백화점 중동점 6층</dd>
+								<dd>
+									<button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="DETAIL VIEWS">
+										<span>D</span><span>E</span><span>T</span><span>A</span><span>I</span><span>L</span>
+										<span>V</span><span>I</span><span>E</span><span>W</span><span>S</span>
+									</button>
+								</dd>
+							</dl>	
+						</div>
+						<div class="swiper-slide">
+							<div class="store_img"><img src="./images/main/store04.png" /></div>
+							<div class="m_store_img"><img src="./images/main/m_store04.png" /></div>
+							<dl data-swiper-parallax="-40">
+								<dt>롯데마트 제주점</dt>
+								<dd><img src="./images/main/line02.gif" /></dd>
+								<dd>Tel. 064-745-8819<br>제주 제주시 노형동 708 롯데마트 제주점 4층</dd>
+								<dd>
+									<button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="DETAIL VIEWS">
+										<span>D</span><span>E</span><span>T</span><span>A</span><span>I</span><span>L</span>
+										<span>V</span><span>I</span><span>E</span><span>W</span><span>S</span>
+									</button>
+								</dd>
+							</dl>	
+						</div>
+					
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						
+						 <!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+							
+					</div><!--//swiper-wrapper-->
+					
+				</div><!--//swiper-container4-->
+			</div><!--//inner-->
+		</section><!--//contents05-->
+		<p class="top"><a href="#"><img src="./images/common/top_btn.png"></a></p>
+		</div><!--top_btn-->
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container4', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		parallax: true,
+        speed: 1000,
+		effect: 'fade',
+		autoplay: 2500,
+		autoplayDisableOnInteraction: false
+    });
+    </script>
+		
+		
+		<footer><!--footer-->
+			<div class="inner">
+				<ul>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">매장정보</a></li>
+					<li><a href="#">보도자료</a></li>
+					<li><a href="#">찾아오시는 길</a></li>
+				</ul>
+					<dl>
+						<dd>(주)에프알엘코리아 대표: 배우진, 코사카 타케시, 서울특별시 중구 세종대로 136(서울파이낸스센터 25층)</dd>
+					<dd>통신판매업신고번호: 2018-서울중구-0487 / 사업자등록번호:104-81-91189 개인정보보호책임자: 김태엽</dd>
+					<dd>COPYRIGHT(C) UNIQLO CO., LTD. ALL RIGHTS RESERVED</dd>
+					</dl>	
+				<h1><a href="#"><img src="./images/common/lotte_logo.png"></a></h1>
+			</div>
+		</footer><!--//footer-->
+	</main>
+</body>
+</html>

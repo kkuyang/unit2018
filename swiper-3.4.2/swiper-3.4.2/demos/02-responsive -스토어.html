@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+
+#contents05{
+	border:1px solid red;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-bottom:200px;
+}
+#contents05 .inner{
+	border:1px solid yellow;
+	width:83%;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+#contents05 .inner h3{
+	border:0px solid red;
+	font-family: 'notokr-medium';
+	font-size:45px;
+	text-align:center;
+	margin-bottom:52px;
+}
+#contents05 .inner h3 span{
+	color:#7f0019;
+}
+#contents05 .inner p.view{
+	border:0px solid red;
+	text-align:right;
+	width:100%;
+	margin-bottom:15px;
+	padding-right:5px;
+}
+#contents05 .inner p.view a{
+	font-family: 'notokr-regular';
+	font-size:18px;
+	color:#000;
+}
+	
+
+#contents05 .inner .swiper-container4 {
+	border:3px solid green;
+	width:100%;
+	position:relative;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper{
+	border:2px solid cyan;
+	width:100%;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper .swiper-slide {
+	border:3px solid blue;
+	width:100%;
+	background:#7f0019;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper .swiper-slide .store_img{
+	border:1px solid green;
+	width:62.5%;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper .swiper-slide .store_img img{
+	width:100%;
+	max-width:100%;
+	display:block;
+	height:100%;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper .swiper-slide dl{
+	border:5px solid orange;
+	width:37.5%;
+	position:absolute;
+	top:0;
+	right:0;
+	padding-top:173px;
+	padding-bottom:172px;
+	padding-left:72px;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper dl dt{
+	border:0px solid blue;
+	font-family: 'notokr-medium';
+	font-size:25px;
+	color:#fff;
+	padding-left:43px;
+	padding-bottom:10px;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper dl dd:nth-child(3){
+	border:0px solid blue;
+	font-family: 'notokr-demilight';
+	font-size:18px;
+	color:#fff;
+	padding-top:15px;
+	padding-bottom:61px;
+	line-height:1.2;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper dl dd:nth-child(4){
+	border:0px solid green;
+	width:150px;
+	text-align:center;
+	background:#7f0019;
+}
+#contents05 .inner .swiper-container4 .swiper-wrapper dl dd:nth-child(4) a{
+	border:1px solid #fff;
+	font-family: 'notokr-regular';
+	font-size:16px;
+	color:#fff;
+	display:block;
+	padding-top:8px;
+	padding-bottom:9px;
+}
+
+.swiper-pagination{
+	border:1px solid red;
+	position:absolute;
+	top:30px;
+	right:0;
+}
+	
+	
+   
+    </style>
+</head>
+<body>
+
+		<section id="contents05"><!--contents05-->
+			<div class="inner">
+				<h3><span>MUJI&nbsp;</span>STORE</h3>
+				<p class="view"><a href="#">전체 보기</a></p>
+				
+				<!-- Swiper -->
+				<div class="swiper-container4">
+					<div class="swiper-wrapper">
+					
+					
+						<div class="swiper-slide">
+							<div class="store_img"><img src="../../../images/main/store01.png" /></div>
+							<dl  data-swiper-parallax="-40">
+								<dt>신촌점</dt>
+								<dd><img src="../../../images/main/line02.gif" /></dd>
+								<dd>Tel. 02 6380 1400<br>서울특별시 서대문구 창천동 18-21</dd>
+								<dd><a href="#">DETAIL VIEWS</a></dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<div class="store_img"><img src="../../../images/main/store02.png" /></div>
+							<dl  data-swiper-parallax="-40">
+								<dt>IFC몰점</dt>
+								<dd><img src="../../../images/main/line02.gif" /></dd>
+								<dd>Tel. 02 6380 1400<br>서울 영등포구 국제금융로 10 IFC몰 L1/L2 </dd>
+								<dd><a href="#">DETAIL VIEWS</a></dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+							<div class="store_img"><img src="../../../images/main/store03.png" /></div>
+							<dl  data-swiper-parallax="-40">
+								<dt>강남점</dt>
+								<dd><img src="../../../images/main/line02.gif" /></dd>
+								<dd>Tel. 02 6380 1400<br>서울특별시 강남구 강남대로 426 무인양품 </dd>
+								<dd><a href="#">DETAIL VIEWS</a></dd>
+							</dl>	
+						</div>
+					
+
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						 <!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						
+						
+					</div><!--wrapper-->
+				</div><!--container-->
+			</div><!--inner-->
+		</section><!--//contents05-->
+		
+		
+		
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container4', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		parallax: true,
+        speed: 1000,
+		effect: 'fade'
+    });
+    </script>
+</body>
+</html>
